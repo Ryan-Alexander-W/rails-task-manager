@@ -1,7 +1,15 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :completed %>
+  <%= f.text_field :completed %>
+
+  <%= f.submit %>
+<% end %>
 
 
-
-<form action="/tasks" method="post">
+<!-- <form action="/tasks" method="post">
   <label for="name">Name: </label>
   <input type="text" name="task[name]" id="name">
 
@@ -9,6 +17,6 @@
   <input type="text" name="task[completed]" id="completed">
 
   <input type="submit">
-</form>
+</form> -->
 
 
